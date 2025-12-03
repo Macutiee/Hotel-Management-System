@@ -1,0 +1,39 @@
+﻿using HMS.BLL.Services;
+using HMS.UI.Configs;
+using ReaLTaiizor.Forms;
+
+namespace HMS.UI
+{
+    public partial class LoginForm : MaterialForm
+    {
+        private readonly IUserService _userService;
+        public LoginForm(IUserService userService)
+        {
+            InitializeComponent();
+            MaterialThemeConfig.Apply(this);
+            _userService = userService;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string username = txtUserName.Text.Trim();
+            string password = txtPassword.Text.Trim();
+
+            using (var context = new HMS.DAL.AppDbContext())
+            {
+                var user = _userService.LoginCheat(username, password);
+
+                if (user != null)
+                {
+                    this.Hide();
+                    var mainForm = new MainForm();
+                    mainForm.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+    }
+}
