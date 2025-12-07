@@ -1,6 +1,9 @@
-﻿namespace HMS.DAL.Models;
+﻿
+using HMS.DAL.Models.Base;
 
-public class User
+namespace HMS.DAL.Models;
+
+public class User : AuditableEntity
 {
     public int UserID { get; set; }
     public required string Username { get; set; }

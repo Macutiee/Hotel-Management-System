@@ -1,7 +1,11 @@
-﻿namespace HMS.DAL.Models;
+﻿using HMS.DAL.Models.Base;
+using System.ComponentModel.DataAnnotations;
 
-public class Role
+namespace HMS.DAL.Models;
+
+public class Role : AuditableEntity
 {
+    [Key]
     public int RoleID { get; set; }
     public required string RoleName { get; set; }
 }

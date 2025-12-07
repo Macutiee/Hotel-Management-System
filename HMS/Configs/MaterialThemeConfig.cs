@@ -10,15 +10,14 @@ public class MaterialThemeConfig
     public static void Apply(MaterialForm form)
     {
         var manager = MaterialSkinManager.Instance;
-        manager.EnforceBackcolorOnAllComponents = true;
+        manager.EnforceBackcolorOnAllComponents = false;
         manager.AddFormToManage(form);
-
         manager.Theme = MaterialSkinManager.Themes.LIGHT;
 
         manager.ColorScheme = new MaterialColorScheme(
-            MaterialPrimary.Indigo500,
-            MaterialPrimary.Indigo700,
-            MaterialPrimary.Indigo100,
+            MaterialPrimary.Green500,
+            MaterialPrimary.Green700,
+            MaterialPrimary.Green100,
             MaterialAccent.Pink200,
             MaterialTextShade.WHITE
         );
