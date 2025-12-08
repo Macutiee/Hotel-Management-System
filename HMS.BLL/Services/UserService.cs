@@ -1,6 +1,7 @@
 ﻿using BCrypt.Net;
 using HMS.DAL.Models;
 using HMS.DAL.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace HMS.BLL.Services;
 
@@ -21,9 +22,14 @@ public class UserService : IUserService
         return BCrypt.Net.BCrypt.Verify(password, user.PasswordHash);
     }
 
-    public User? LoginCheat(string userName, string password)
+    public User? Authenticate(string username, string password)
     {
-        return _userRepository.Login(userName, password);
+        var user = _userRepository.GetByUsername(username);
+        if (user == null)
+            return null;
+
+        bool match = BCrypt.Net.BCrypt.Verify(password, user.PasswordHash);
+        return match ? user : null;
     }
 
     public void Register(string username, string password, string fullname)

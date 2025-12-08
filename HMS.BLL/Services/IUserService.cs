@@ -5,6 +5,6 @@ namespace HMS.BLL.Services;
 public interface IUserService
 {
     bool Login(string username, string password);
-    User? LoginCheat(string userName, string password);
+    User? Authenticate(string username, string password);
     void Register(string username, string password, string fullName);
 }

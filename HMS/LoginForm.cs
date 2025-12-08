@@ -20,20 +20,20 @@ namespace HMS.UI
             string username = txtUserName.Text.Trim();
             string password = txtPassword.Text.Trim();
 
-            using (var context = new HMS.DAL.AppDbContext())
-            {
-                var user = _userService.LoginCheat(username, password);
+            var user = _userService.Authenticate(username, password);
 
-                if (user != null)
-                {
-                    this.Hide();
-                    var mainForm = new MainForm();
-                    mainForm.Show();
-                }
-                else
-                {
-                    MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+            if (user != null)
+            {
+                this.Hide();
+                var mainForm = new MainForm();
+                mainForm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Invalid username or password.",
+                    "Login Failed",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
 
