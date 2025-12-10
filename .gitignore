@@ -5,3 +5,9 @@
 /HMS/.vs/HMS
 /HMS/bin/Debug/net8.0-windows
 /HMS/obj
+/HMS/.vs
+/HMS/bin/Debug/net8.0-windows7.0
+/HMS.BLL/bin/Debug/net8.0
+/HMS.BLL/obj
+/HMS.DAL/bin/Debug/net8.0
+/HMS.DAL/obj
