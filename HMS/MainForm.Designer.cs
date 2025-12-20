@@ -317,7 +317,7 @@
             tabPage2.Controls.Add(dateTimePicker2);
             tabPage2.Controls.Add(dateTimePicker1);
             tabPage2.Controls.Add(label3);
-            tabPage2.ImageKey = "reservation-completed-icon.png";
+            tabPage2.ImageKey = "booking_brand_icon_211924.png";
             tabPage2.Location = new Point(4, 39);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
@@ -582,27 +582,27 @@
             // 
             // tabPage5
             // 
-            tabPage5.ImageKey = "customer-8-32.png";
+            tabPage5.ImageKey = "employee_group_line_icon_235349(1).png";
             tabPage5.Location = new Point(4, 39);
             tabPage5.Name = "tabPage5";
             tabPage5.Size = new Size(1104, 477);
             tabPage5.TabIndex = 4;
-            tabPage5.Text = "Customers";
+            tabPage5.Text = "Employee";
             tabPage5.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
-            tabPage3.ImageKey = "online-support.png";
+            tabPage3.ImageKey = "taskboardmono_105883.png";
             tabPage3.Location = new Point(4, 39);
             tabPage3.Name = "tabPage3";
             tabPage3.Size = new Size(1104, 477);
             tabPage3.TabIndex = 2;
-            tabPage3.Text = "Employee";
+            tabPage3.Text = "HouseKeeping Tasks";
             tabPage3.UseVisualStyleBackColor = true;
             // 
             // tabPage4
             // 
-            tabPage4.ImageKey = "file.png";
+            tabPage4.ImageKey = "speech_report_meeting_presentation_icon_262580.png";
             tabPage4.Location = new Point(4, 39);
             tabPage4.Name = "tabPage4";
             tabPage4.Size = new Size(1104, 477);
@@ -622,6 +622,11 @@
             imageList1.Images.SetKeyName(4, "file.png");
             imageList1.Images.SetKeyName(5, "reservation-completed-icon.png");
             imageList1.Images.SetKeyName(6, "customer-8-32.png");
+            imageList1.Images.SetKeyName(7, "tasks_113292.png");
+            imageList1.Images.SetKeyName(8, "taskboardmono_105883.png");
+            imageList1.Images.SetKeyName(9, "speech_report_meeting_presentation_icon_262580.png");
+            imageList1.Images.SetKeyName(10, "booking_brand_icon_211924.png");
+            imageList1.Images.SetKeyName(11, "employee_group_line_icon_235349(1).png");
             // 
             // MainForm
             // 
