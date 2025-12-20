@@ -592,12 +592,12 @@
             // 
             // tabPage3
             // 
-            tabPage3.ImageKey = "taskboardmono_105883.png";
+            tabPage3.ImageKey = "user_person_profile_avatar_icon_190943.png";
             tabPage3.Location = new Point(4, 39);
             tabPage3.Name = "tabPage3";
             tabPage3.Size = new Size(1104, 477);
             tabPage3.TabIndex = 2;
-            tabPage3.Text = "HouseKeeping Tasks";
+            tabPage3.Text = "Customer";
             tabPage3.UseVisualStyleBackColor = true;
             // 
             // tabPage4
@@ -627,6 +627,7 @@
             imageList1.Images.SetKeyName(9, "speech_report_meeting_presentation_icon_262580.png");
             imageList1.Images.SetKeyName(10, "booking_brand_icon_211924.png");
             imageList1.Images.SetKeyName(11, "employee_group_line_icon_235349(1).png");
+            imageList1.Images.SetKeyName(12, "user_person_profile_avatar_icon_190943.png");
             // 
             // MainForm
             // 
