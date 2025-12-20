@@ -1,7 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using HMS.DAL.Models;
-using BCrypt.Net;
-
 
 namespace HMS.DAL;
 
